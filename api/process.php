@@ -15,13 +15,6 @@ switch ($cmd) {
 		calendarView();
 		break;
 
-	case 'regConfirm':
-		regConfirm();
-		break;
-
-	case 'delete':
-		regDelete();
-		break;
 
 	case 'user':
 		userDetails();
@@ -46,52 +39,13 @@ function bookCalendar()
 	exit();
 }
 
-function regConfirm()
-{
-	$userId		= $_GET['userId'];
-	$action 	= $_GET['action'];
-	$stat		= ($action == 'approve') ? 'APPROVED' : 'DENIED';
-
-	$sql		= "UPDATE tbl_reservations SET status = '$stat' WHERE uid = $userId";
-	dbQuery($sql);
-
-	//send email now.
-	$data = array();
-
-	header('Location: ../views/?v=DB&msg=' . urlencode('Reservation status successfully changed.'));
-	exit();
-}
-
-function regDelete()
-{
-	$userId	= $_GET['userId'];
-	$sql1	= "DELETE FROM tbl_reservations WHERE uid = $userId";
-	dbQuery($sql1);
-	$sql2	= "DELETE FROM tbl_users WHERE id = $userId";
-	dbQuery($sql2);
-
-	header('Location: ../views/?v=LIST&msg=' . urlencode('User record successfully deleted.'));
-	exit();
-}
 
 
 function get_appointment()
 {
 
 	return ("SELECT * FROM rendez_vous");
-	// if ($_SESSION['calendar_fd_user']['fonction'] == 'manager') {
-	// 	return ("SELECT * FROM rendez_vous");
-	// } 
-	
-	// else {
-		
-	// 		if ($_SESSION['calendar_fd_user']['fonction'] == 'etudiant') {
-	// 			$login = $_SESSION['calendar_fd_user']['login'];
-	// 			return ("SELECT * FROM rendez_vous where login_etudiant = '$login'");
-	// 		}
-		
-	// }
-	return ("");
+
 }
 
 

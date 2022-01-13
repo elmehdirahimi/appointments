@@ -11,7 +11,7 @@
 	<div class="box-header with-border">
 		<h3 class="box-title"><b>nouveau rendez-vous</b></h3>
 	</div>
-	<?php if ($_SESSION['calendar_fd_user']['fonction'] == 'manager') { ?>
+
 		<form role="form" action="<?php echo WEB_ROOT; ?>api/process.php?cmd=book" method="post">
 			<div class="box-body">
 
@@ -70,7 +70,7 @@
 					<button type="submit" class="btn btn-primary">Submit</button>
 				</div>
 		</form>
-	<?php } ?>
+	
 </div>
 <!-- /.box -->
 <script type="text/javascript">

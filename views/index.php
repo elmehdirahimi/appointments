@@ -26,10 +26,6 @@ switch ($view) {
 		$content 	= 'rdv_detailles.php';
 		$pageTitle 	= 'mon compte';
 		break;
-	case 'UPDATERDV':
-		$content 	= 'appointment.php';
-		$pageTitle 	= 'mon compte';
-		break;
 	case 'UPDATEUSER':
 		$content 	= 'userUpdatefForm.php';
 		$pageTitle 	= 'modifier un utilisateur';
