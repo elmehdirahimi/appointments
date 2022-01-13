@@ -35,16 +35,20 @@ if ($status_rdv == 'vide') {
                 <dt> statut du rendez-vous</dt>
                 <dd><span class="label-<?php echo $status_rdv; ?>"><?php echo $status_name; ?></span></dd>
 
-
+<?php
+                    if($login_etudiant)
+                    {  ?>
                 <dt>Nom du etudiant</dt>
                 <dd><?php
-
+                    
                     $sql = "SELECT  nom_user FROM users  where login = '$login_etudiant'";
                     $result = dbQuery($sql);
                     $row = dbFetchAssoc($result);
                     echo $row['nom_user'];
+                    
                     ?></dd>
-
+ }
+                    ?>
                 <dt>date </dt>
                 <dd> de <?php echo  $date_debut; ?> a <?php echo  $date_fin; ?></dd>
 
