@@ -9,8 +9,8 @@ session_start();
 // database connection config
 
 $dbHost = 'localhost';
-$dbUser = 'rahimi';
-$dbPass = 'rahimi1498';
+$dbUser = 'root';
+$dbPass = '';
 $dbName = 'ecole_rdv';
 
 //Project data
