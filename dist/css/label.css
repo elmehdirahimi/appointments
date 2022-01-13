@@ -1,0 +1,47 @@
+
+.label-confirme {
+    background-color: #00b818;
+  }
+  
+  .label-non_confirme {
+    background-color: #dede00;
+  }
+  .label-r2 {
+    background-color: #d16a0a;
+  }
+  .label-r3 {
+    background-color: #b30ad1;
+  }
+  .label-r4 {
+    background-color: #d10a2b;
+  }
+  .label-vente {
+    background-color: #3f0ad1;
+  }
+  .label-pas_de_vente {
+    background-color: #0a99d1;
+  }
+
+
+  .option-confirme {
+    color: #00b818;
+  }
+  
+  .option-non_confirme {
+    color: #dede00;
+  }
+  .option-r2 {
+    color: #d16a0a;
+  }
+  .option-r3 {
+    color: #b30ad1;
+  }
+  .option-r4 {
+   color: #d10a2b;
+  }
+  .option-vente {
+    color: #3f0ad1;
+  }
+  .option-pas_de_vente {
+    color: #0a99d1;
+  }
