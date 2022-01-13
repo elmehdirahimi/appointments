@@ -19,7 +19,7 @@ $self = WEB_ROOT . 'admin/index.php';
     
       <a href="<?php echo WEB_ROOT; ?>" class="logo" >
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <img  style="width:100%;height:100%;" src="<?php echo WEB_ROOT; ?>dist/img/logo1.png" alt="" />
+        <img  style="width:100%;height:100%;" src="<?php echo WEB_ROOT; ?>dist/img/logo.png" alt="" />
     </a>
 
       <!-- <span class="logo-lg"><b>Tel Action</b></span> </a> -->
